@@ -4,8 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/contact.css" />
   </head>
   <body>
-    <section id="section3"></section>
+    <section class="reservation" id="reservation">
+      <h2 class="reservation__title">Book a appointment</h2>
+      <form action="submit-contact" class="contact__form form">
+        <fieldset class="form__fieldset">
+          <label for="name" class="form__label"
+            >Full Name
+            <input
+              type="text"
+              required
+              id="name"
+              name="name"
+              class="form__input"
+              placeholder="Name Surname"
+              required
+            />
+          </label>
+          <label for="guests" class="form__label"
+            >Number of guests*
+            <input
+              type="number"
+              required
+              id="guests"
+              name="guests"
+              class="form__input"
+              placeholder="1-8"
+            />
+          </label>
+          <label for="datetime-local" class="form__label"
+            >Date & time*
+            <input
+              type="datetime-local"
+              required
+              id="datetime-local"
+              name="datetime-local"
+              class="form__input"
+            />
+          </label>
+          <label for="email" class="form__label"
+            >Your email*
+            <input
+              type="email"
+              required
+              id="email"
+              name="email"
+              class="form__input"
+              placeholder="email@email.com"
+            />
+          </label>
+        </fieldset>
+        <button type="submit" class="form__button">
+          <strong>See you soon</strong>
+        </button>
+        <label for="terms" class="form__label form__label_type_checkbox">
+          <input
+            type="checkbox"
+            id="terms"
+            name="form__checkbox"
+            class="form__checkbox"
+          />
+          I agree with terms of use
+        </label>
+      </form>
+    </section>
   </body>
 </html>
