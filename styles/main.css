@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* navbar */
+
+.custom-navbar {
+  background-color: rgb(167, 121, 121); /* your color */
+}
+.nav-link:hover {
+  background-color: rgb(170, 75, 75) !important;
+} /* your hover color */
+
+.dropdown-toggle {
+  color: white !important; /* ensure text is white */
+  background-color: rosybrown;
+}
+
+.nav-link {
+  color: black !important; /* ensure text is white */
+  background-color: rgb(167, 121, 121) !important;
+  text-align: center;
+}
+
+.navbar-brand {
+  color: black !important; /* ensure brand text is white */
+}
+
+/* navbar end */
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 50px;
+}
+
+li a:hover:not(.active) {
+  background-color: rosybrown;
+}
+
+#login {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 32px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* The Pros cards */
+
+.cards-section {
+  background-color: rgb(167, 121, 121);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2em;
+  color: #333;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+}
+
+.card-body {
+  font-size: 1em;
+  color: #333;
+  background-color: transparent;
+}
+.card-title {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.theTeam {
+  background-color: rosybrown;
+  margin: 0%;
+  height: 100px;
+  text-align: center;
+  font-size: 4em;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}

@@ -6,13 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/contact.css" />
   </head>
-  <body>
+  <body class="body">
     <section class="reservation" id="reservation">
       <h2 class="reservation__title">Book a appointment</h2>
       <form action="submit-contact" class="contact__form form">
         <fieldset class="form__fieldset">
           <label for="name" class="form__label"
-            >Full Name
+            ><strong>Full Name*</strong>
             <input
               type="text"
               required
@@ -24,7 +24,7 @@
             />
           </label>
           <label for="guests" class="form__label"
-            >Number of guests*
+            ><strong> Number of guests*</strong>
             <input
               type="number"
               required
@@ -35,7 +35,7 @@
             />
           </label>
           <label for="datetime-local" class="form__label"
-            >Date & time*
+            ><strong>Date & time*</strong>
             <input
               type="datetime-local"
               required
@@ -45,7 +45,7 @@
             />
           </label>
           <label for="email" class="form__label"
-            >Your email*
+            ><strong>Your email*</strong>
             <input
               type="email"
               required
@@ -53,6 +53,18 @@
               name="email"
               class="form__input"
               placeholder="email@email.com"
+            />
+          </label>
+          <label for="text" class="form__label"
+            ><strong>Message*</strong>
+            <input
+              type="text"
+              required
+              id="name"
+              name="name"
+              class="form__input"
+              placeholder="Tell us about your request"
+              required
             />
           </label>
         </fieldset>
@@ -66,7 +78,7 @@
             name="form__checkbox"
             class="form__checkbox"
           />
-          I agree with terms of use
+          <strong> I agree with terms of use</strong>
         </label>
       </form>
     </section>
