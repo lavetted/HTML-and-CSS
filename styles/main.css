@@ -189,3 +189,26 @@ li a:hover:not(.active) {
     margin: auto;
   }
 }
+
+/* footer */
+
+p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  background-color: rosybrown;
+  font-size: large;
+  margin: 0;
+}
+
+.social-icon {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
