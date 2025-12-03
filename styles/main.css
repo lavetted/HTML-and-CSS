@@ -25,6 +25,18 @@ body {
   background-color: rosybrown;
 }
 
+.dropdown-menu.show {
+  background-color: #d180c0;
+  border: 2px solid black;
+  width: auto;
+  height: auto;
+}
+
+.dropdown-item {
+  width: auto;
+  height: auto;
+}
+
 .nav-link {
   color: black !important; /* ensure text is white */
   background-color: rgb(167, 121, 121) !important;
@@ -62,7 +74,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
 }
 
@@ -91,8 +102,8 @@ li a:hover:not(.active) {
 #login {
   color: black;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
+  justify-content: end;
   height: 50px;
   width: 100px;
   background-color: rosybrown;
@@ -167,29 +178,6 @@ li a:hover:not(.active) {
   color: black;
 }
 
-/* moblie */
-
-@media (max-width: 768px) {
-  .cards-section {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .card {
-    width: 100%;
-    margin: 0;
-  }
-
-  .navbar-toggler {
-    margin: auto;
-  }
-
-  .navbar-nav {
-    text-align: center;
-    margin: auto;
-  }
-}
-
 /* footer */
 
 p {
@@ -211,4 +199,36 @@ p {
 
 .social-icon:hover {
   transform: scale(1.15);
+}
+
+/* moblie */
+
+@media (max-width: 768px) {
+  .cards-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar-toggler {
+    margin: auto;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin: auto;
+  }
+
+  .nav-item.dropdown {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dropdown-item {
+    position: static;
+  }
 }
